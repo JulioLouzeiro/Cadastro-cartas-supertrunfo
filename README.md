@@ -1,1 +1,1 @@
-# Cursos-TI-desafio-cadastro-das-cartas-no-super-trunfo
+# Cursos-TI-Estácio-desafio-cadastro-das-cartas-no-super-trunfo
