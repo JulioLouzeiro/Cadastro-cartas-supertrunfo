@@ -4,8 +4,8 @@ int main()
 {
 
     // --------Carta 01--------
-    char estado1[3];                              // recebe a letra referente ao estado
-    char codigo1[4];                              // recebe o codigo da carta
+    char estado1;                                 // recebe a letra referente ao estado
+    char codigo1[10];                             // recebe o codigo da carta
     char cidade1[50];                             // recebe o nome da cidade
     int populacao1;                               // recebe o numero da populacao
     float area1, pib1, densidade1, pibpercapita1; // recebe o valor da area, pib, densidade e pib per capita
@@ -13,22 +13,23 @@ int main()
 
     // ---------Carta 02--------
 
-    char estado2[3];                              // recebe a letra referente ao estado
-    char codigo2[4];                              // recebe o codigo da carta
+    char estado2;                                 // recebe a letra referente ao estado
+    char codigo2[10];                             // recebe o codigo da carta
     char cidade2[50];                             // recebe o nome da cidade
     int populacao2;                               // recebe o numero da populacao
     float area2, pib2, densidade2, pibpercapita2; // recebe o valor da area, pib, densidade e pib per capita
     int pontosturisticos2;                        // recebe o numero de pontos turisticos
 
-    //----------------- entrada de dados da primeira carta 1-----------------
+    //----------Entrada de dados da primeira carta 1-----------------
 
     printf("\n--Cadastro da Carta A:--\n"); // cabeçalho do cadastro da carta 1
 
-    printf("Estado: \n");   // entrada do estado
-    scanf(" %s", &estado1); //
+    printf("Estado: \n"); // entrada do estado
+    scanf(" %c", &estado1);
 
     printf("Código da Carta A:\n"); // entrada do codigo da carta
-    scanf(" %s", &codigo1);
+    scanf(" %s", &codigo1); 
+
     printf("Nome da cidade:\n"); // entrada do nome da cidade
     scanf(" %s", &cidade1);
 
@@ -49,7 +50,7 @@ int main()
     printf("\n||Cadastro da carta B||\n"); // cabeçalho do cadastro da carta 2
 
     printf("Estado:\n"); // entrada do estado
-    scanf(" %s", &estado2);
+    scanf(" %c", &estado2);
 
     printf("Código da carta B\n"); // entrada do codigo da carta
     scanf(" %s", &codigo2);
@@ -58,7 +59,7 @@ int main()
     scanf(" %s", &cidade2);
 
     printf("População:\n"); // entrada da população
-    scanf("  %d", &populacao2);
+    scanf(" %d", &populacao2);
 
     printf("Área:\n"); // entrada da área
     scanf(" %f", &area2);
@@ -85,9 +86,9 @@ int main()
     printf("Área: %.2f km²\n", area1);                              // área da cidade
     printf("PIB: %.2f bilhões de reais\n", pib1);                   // pib da cidade
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos1); // numero de pontos turisticos
-    
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);   // densidade populacional
-    printf("PIB per Capita: %.2f reais\n", pibpercapita1);          // pib per capita
+
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1); // densidade populacional
+    printf("PIB per Capita: %.2f reais\n", pibpercapita1);        // pib per capita
 
     // saida da carta 2
     printf("\n--Carta B--\n");                                      // cabeçalho da carta 2
