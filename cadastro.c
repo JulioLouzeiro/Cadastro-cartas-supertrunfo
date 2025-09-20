@@ -47,8 +47,10 @@ int main()
     // ------------Entrada de dados da segunda carta 2
 
     printf("\n||Cadastro da carta B||\n");
+
     printf("Estado:\n");
     scanf(" %s", &estado2);
+
     printf("Código da carta B\n");
     scanf(" %s", &codigo2);
 
@@ -97,6 +99,6 @@ int main()
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pibpercapita2);
- 
+
     return 0;
 }
