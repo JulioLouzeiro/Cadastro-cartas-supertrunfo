@@ -9,7 +9,7 @@ int main()
     char cidade1[50];                             // recebe o nome da cidade
     unsigned long int populacao1;                 // recebe o numero da populacao trocado para unsigned long int era int
     float area1, pib1, densidade1, pibpercapita1; // recebe o valor da area, pib, densidade e pib per capita
-    float superPoder1;                            // novo atributo super poder
+    float superPoder1, resultado;                 // novo atributo super poder e resultado
     int pontosturisticos1;                        // recebe o numero de pontos turisticos
 
     // ---------Carta 02--------
@@ -74,11 +74,11 @@ int main()
     // Cálculos da Carta 1 e Carta 2
     densidade1 = populacao1 / area1;
     pibpercapita1 = pib1 / populacao1;
-    superPoder1 = (float)populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapita1 + 1 / densidade1 + pontosturisticos1; // cálculo do super poder da carta 1
+    superPoder1 = (float)populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapita1 + (1.0 / densidade1); // cálculo do super poder da carta 1
 
     densidade2 = populacao2 / area2;
     pibpercapita2 = pib2 / populacao2;
-    superPoder2 = (float)populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapita2 + 1 / densidade2 + pontosturisticos2; // cálculo do super poder da carta 2
+    superPoder2 = (float)populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapita2 + (1.0 / densidade2); // cálculo do super poder da carta 2
 
     // saida da carta 1
     printf("\n--Carta A--\n");                                      // cabeçalho da carta 1
